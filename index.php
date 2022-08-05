@@ -82,17 +82,195 @@
 
         <div class="skills">
             <h1 class="heading"><span>Skills</span></h1>
+
+            <div class="progress">
+                <div class="bar"><h3><span>HTML</span><span>95%</span></h3></div>
+                <div class="bar"><h3><span>CSS</span><span>45%</span></h3></div>
+                <div class="bar"><h3><span>JavaScript</span><span>35%</span></h3></div>
+                <div class="bar"><h3><span>PHP</span><span>25%</span></h3></div>
+            </div>
         </div>
 
-        <div class="progress">
-            <div class="bar"><span>HTML</span><span>95%</span></div>
-            <div class="bar"><span>CSS</span><span>45%</span></div>
-            <div class="bar"><span>JavaScript</span><span>15%</span></div>
-            <div class="bar"><span>PHP</span><span>5%</span></div>
+        <div class="edu-exp">
+            <h1 class="heading"><span>Education and Experience</span></h1>
+            <div class="row">
+                <div class="box-container">
+                    <h3 class="title">Education</h3>
+                    <div class="box">
+                        <span>(2017 - 2019)</span>
+                        <h3>internship</h3>
+                        <p>i volunteered to teach physics to form one and form three at sorenyi secondary
+                            school and at the same time i vwas a boarding parent of class 6 and 7 students
+                            of St Judes primary school.
+                        </p>
+                    </div>
+
+                    <div class="box">
+                        <span>(2019 - 2020)</span>
+                        <h3>internship</h3>
+                        <p>i volunteered to teach physics to form one and form three at sorenyi secondary
+                            school and at the same time i vwas a boarding parent of class 6 and 7 students
+                            of St Judes primary school.
+                        </p>
+                    </div>
+
+                    <div class="box">
+                        <span>(2020 - 2022)</span>
+                        <h3>internship</h3>
+                        <p>i volunteered to teach physics to form one and form three at sorenyi secondary
+                            school and at the same time i vwas a boarding parent of class 6 and 7 students
+                            of St Judes primary school.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box-container">
+                    <h3 class="title">Experience</h3>
+                    <div class="box">
+                        <span>(2019 - 2020)</span>
+                        <h3>front-end developer</h3>
+                        <p>i volunteered to teach physics to form one and form three at sorenyi secondary
+                            school and at the same time i vwas a boarding parent of class 6 and 7 students
+                            of St Judes primary school.
+                        </p>
+                    </div>
+                    
+                    <div class="box">
+                        <span>(2019 - 2020)</span>
+                        <h3>back-end developer</h3>
+                        <p>i volunteered to teach physics to form one and form three at sorenyi secondary
+                            school and at the same time i vwas a boarding parent of class 6 and 7 students
+                            of St Judes primary school.
+                        </p>
+                    </div>
+                        
+                    <div class="box">
+                        <span>(2019 - 2020)</span>
+                        <h3>full-stack developer</h3>
+                        <p>i volunteered to teach physics to form one and form three at sorenyi secondary
+                            school and at the same time i vwas a boarding parent of class 6 and 7 students
+                            of St Judes primary school.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    <!-- about section ends -->
 
+    <!-- services section starts -->
+    <section class="services" id="services">
+        <h1 class="heading"><span>Services</span></h1>
+        <div class="box-container">
 
+            <div class="box">
+                <i class="fas fa-code"></i>
+                <h3>web development</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, natus explicabo quidem quos dolorum 
+                    libero consequuntur qui non praesentium quam sequi enim dolores esse eius eveniet sit odit officia reprehenderit?</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-paint-brush"></i>
+                <h3>graphics design</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, natus explicabo quidem quos dolorum 
+                    libero consequuntur qui non praesentium quam sequi enim dolores esse eius eveniet sit odit officia reprehenderit?</p>
+            </div>
+
+            <div class="box">
+                <i class="fab fa-bootstrap"></i>
+                <h3>bootstrap</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, natus explicabo quidem quos dolorum 
+                    libero consequuntur qui non praesentium quam sequi enim dolores esse eius eveniet sit odit officia reprehenderit?</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-chart-line"></i>
+                <h3>seo marketing</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, natus explicabo quidem quos dolorum 
+                    libero consequuntur qui non praesentium quam sequi enim dolores esse eius eveniet sit odit officia reprehenderit?</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>digital marketing</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, natus explicabo quidem quos dolorum 
+                    libero consequuntur qui non praesentium quam sequi enim dolores esse eius eveniet sit odit officia reprehenderit?</p>
+            </div>
+
+            <div class="box">
+                <i class="fab fa-wordpress"></i>
+                <h3>wordpress</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, natus explicabo quidem quos dolorum 
+                    libero consequuntur qui non praesentium quam sequi enim dolores esse eius eveniet sit odit officia reprehenderit?</p>
+            </div>
+        </div>
+    </section>
+    <!-- services section ends -->
+
+    <!-- portfolio section starts -->
+
+    <section class="portfolio" id="portfolio">
+        <h1 class="heading"><span>portfolio</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="55.png" alt="">
+                <h3>web development</h3>
+                <span>(2020-2022)</span>
+            </div>
+
+            <div class="box">
+                <img src="66.jpg" alt="">
+                <h3>web development</h3>
+                <span>(2020-2022)</span>
+            </div>
+
+            <div class="box">
+                <img src="77.png" alt="">
+                <h3>web development</h3>
+                <span>(2020-2022)</span>
+            </div>
+
+            <div class="box">
+                <img src="88.jpg" alt="">
+                <h3>web development</h3>
+                <span>(2020-2022)</span>
+            </div>
+
+            <div class="box">
+                <img src="99.jpg" alt="">
+                <h3>web development</h3>
+                <span>(2020-2022)</span>
+            </div>
+
+            <div class="box">
+                <img src="100.jpg" alt="">
+                <h3>web development</h3>
+                <span>(2020-2022)</span>
+            </div>
+        </div>
+    </section> 
+
+    <!-- portfolio section ends -->
+
+    <!-- contact section starts -->
+    
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>contact me</span></h1>
+
+        <form action="" method="post">
+            <div class="flex">
+                <input type="text" name="name" placeholder="enter your name" class="box" required>
+                <input type="email" name="email" placeholder="enter your email" class="box" required>
+            </div>
+            <input type="number" min="0" name="number" placeholder="enter your number" class="box" required>
+            <textarea name="message" class="box" required placeholder="enter your message" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send Message" name="send" class="btn">
+        </form>
+    </section>
+
+    <!-- contact section ends -->
+    <div class="credit">&copy; copyright @ <?php echo date('Y'); ?> by <span>Frank.M</span></div>
 
 
 
