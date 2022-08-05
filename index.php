@@ -58,6 +58,40 @@
         </div>
     </section>
 
+    <!-- home section ends-->
+
+    <!-- about section starts--> 
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>Biography</span></h1>
+        <div class="biography">
+            <p>I am a full stack web developer who can actively engage in website development. 
+                Currently, i am in my third year pursuing a bachelors degree in computer engineering
+                and information technology at the university of Dar Es Salaam.
+            </p>
+
+            <div class="bio">
+                <h3> <span>Name: </span>Frank Malisa</h3>
+                <h3> <span>Email: </span>fmalisah02@gmail.com</h3>
+                <h3> <span>Address: </span>Arusha,Tanzania</h3>
+                <h3> <span>Phone: </span>+255-758-893-165</h3>
+                <h3> <span>Phone: </span>+255-626-874-607</h3>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h1 class="heading"><span>Skills</span></h1>
+        </div>
+
+        <div class="progress">
+            <div class="bar"><span>HTML</span><span>95%</span></div>
+            <div class="bar"><span>CSS</span><span>45%</span></div>
+            <div class="bar"><span>JavaScript</span><span>15%</span></div>
+            <div class="bar"><span>PHP</span><span>5%</span></div>
+        </div>
+    </section>
+
 
 
 

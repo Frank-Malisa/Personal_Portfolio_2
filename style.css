@@ -62,6 +62,17 @@ section{
     text-align: center;
 }
 
+.heading {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.heading span{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    border-bottom: var(--border-bold);
+}
+
 .btn{
     display: inline-block;
     margin-top: 1rem;
@@ -92,10 +103,6 @@ section{
     flex-flow: column;
     transition: .2s linear !important;
     text-align: center;
-    -webkit-transition: .2s linear !important;
-    -moz-transition: .2s linear !important;
-    -ms-transition: .2s linear !important;
-    -o-transition: .2s linear !important;
 }
 
 .header .logo{
@@ -126,10 +133,6 @@ section{
     margin:0 1rem;
     cursor: pointer;
     transition: .6s linear !important;
-    -webkit-transition: .6s linear !important;
-    -moz-transition: .6s linear !important;
-    -ms-transition: .6s linear !important;
-    -o-transition: .6s linear !important;
 }
 
 .follow ion-icon:hover{
@@ -198,6 +201,62 @@ section{
     padding: 1rem 0;
 }
 
+.about .biography p{
+    margin: 1rem auto;
+    max-width: 70rem;
+    line-height: 1.5;
+    font-size: 1.7rem;
+}
+
+.about .biography .bio {
+    margin-top: 1rem;
+}
+
+.about .biography .bio h3{
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    margin: 1rem;
+    background-color: var(--border-light);
+    border: var(--border-light);
+    word-break: break-all;
+    font-size: 1.3rem;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.about .biography .bio h3 span{
+    font-weight: bolder;
+}
+
+.about .skills{
+    margin:3rem 0;
+}
+
+.about .skills .progress {
+    margin-top: 1rem;
+}
+
+.about .skills .progress .bar {
+    margin: 1rem auto;
+    max-width: 70rem;
+    border: var(--border-bold);
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -243,5 +302,13 @@ body.active{
     .home .image img{
         height: auto;
         width: 100%;
+    }
+
+    .heading span{
+        font-size: 4rem;
+    }
+
+    .about .biography .bio h3{
+        font-size: 2rem;
     }
 }
