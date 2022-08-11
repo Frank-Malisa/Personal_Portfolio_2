@@ -353,7 +353,7 @@ section{
 }
 
 .services .box-container .box:hover p {
-    color: #eee;
+    color:var(--white);
 }
 
 .portfolio .box-container {
@@ -372,8 +372,8 @@ section{
 .portfolio .box-container .box h3 {
     font-size: 2rem;
     margin: 1rem 0;
-    font-weight: bolder;
-}
+    font-weight: normal;
+} 
 
 .portfolio .box-container .box span {
     font-size: 1.7rem;

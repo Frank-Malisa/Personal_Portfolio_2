@@ -230,24 +230,6 @@
                 <h3>web development</h3>
                 <span>(2020-2022)</span>
             </div>
-
-            <div class="box">
-                <img src="88.jpg" alt="">
-                <h3>web development</h3>
-                <span>(2020-2022)</span>
-            </div>
-
-            <div class="box">
-                <img src="99.jpg" alt="">
-                <h3>web development</h3>
-                <span>(2020-2022)</span>
-            </div>
-
-            <div class="box">
-                <img src="100.jpg" alt="">
-                <h3>web development</h3>
-                <span>(2020-2022)</span>
-            </div>
         </div>
     </section> 
 
