@@ -169,3 +169,35 @@ body.active
 
 
 
+/* media queries */
+
+@media (max-width:991px)
+{
+    html
+    {
+        font-size: 55%;
+    }
+
+    body.active
+    {
+        padding-left: 0;
+    }
+}
+
+@media (max-width:450px)
+{
+    html
+    {
+        font-size: 50%;
+    }
+
+    .header.active
+    {
+        padding-top: 7rem;
+    }
+
+    #menu-btn.fa-times
+    {
+        right: 0;
+    }
+}
