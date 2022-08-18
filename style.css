@@ -70,6 +70,19 @@ section
     text-align: center;
 }
 
+.heading 
+{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.heading span
+{
+    text-transform: uppercase;
+    font-size: 5.5rem;
+    border-bottom: var(--border-bold);
+}
+
  .btn
  {
     display: inline-block;
@@ -217,9 +230,143 @@ section
     line-height: 2;
 }
 
+.about .biography p
+{
+    margin: 2rem auto;
+    max-width: 70rem;
+    line-height: 2;
+    font-size: 1.7rem;
+}
 
+.about .biography .bio 
+{
+    margin-top: 1rem 0;
+}
 
+.about .biography .bio h3 
+{
+    padding: 1rem, 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: inline-block;
+    margin: 1rem;
+    background-color: var(--light-bg);
+    border: var(--border-light);
+    word-break: break-all;
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-transform: none;
+}
 
+.about .biography .bio h3 span 
+{
+    font-weight: lighter;
+}
+
+.about .skills
+{
+    margin: 3rem 0;
+}
+
+.about .skills .progress
+{
+    margin-top: 1rem;
+}
+
+.about .skills .progress .bar 
+{
+    margin: 1rem auto;
+    max-width: 70rem;
+    border: var(--border-bold);
+    padding: 1rem;
+}
+
+.about .skills .progress .bar h3
+{
+    font-size: 2rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--yellow);
+}
+
+.about .skills .progress .bar span
+{
+    font-weight: normal;
+}
+
+.about .skills .progress .bar:nth-child(1) h3 
+{
+    width: 95%;
+}
+
+.about .skills .progress .bar:nth-child(2) h3 
+{
+    width: 65%;
+}
+
+.about .skills .progress .bar:nth-child(3) h3 
+{
+    width: 35%;
+}
+
+.about .skills .progress .bar:nth-child(4) h3 
+{
+    width: 20%;
+}
+
+.about .skills .progress .bar:nth-child(5) h3 
+{
+    width: 45%;
+}
+
+.about .edu-exp .row
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.about .edu-exp .row .box-container
+{
+    flex: 1 1 40rem;
+}
+
+.about .edu-exp .row .box-container .title
+{
+    padding: 1.5rem;
+    font-size: 2.5rem;
+    background-color: var(--yellow);
+}
+
+.about .edu-exp .row .box-container .box
+{
+    text-align: left;
+    margin: 1.5rem 0;
+    background-color: var(--light-bg);
+    padding: 2rem;
+}
+
+.about .edu-exp .row .box-container .box span
+{
+    font-size: 1.5rem;
+}
+
+.about .edu-exp .row .box-container .box h3
+{
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.about .edu-exp .row .box-container .box p
+{
+    line-height: 1.5;
+    font-size: 1.7rem;
+    line-height: 2;
+}
 
 
 
@@ -267,5 +414,15 @@ section
     {
         height: auto;
         width: 100%;
+    }
+
+    .heading span
+    {
+        font-size: 4rem;
+    }
+
+    .about .biography .bio h3 
+    {
+        font-size: 2rem;
     }
 }
