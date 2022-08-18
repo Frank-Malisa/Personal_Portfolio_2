@@ -62,13 +62,38 @@ body.active
     padding-left: 35rem;
 }
 
+section
+{
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+ .btn
+ {
+    display: inline-block;
+    margin-top: 1rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border: var(--border-light);
+    font-size: 2rem;
+ }
+ 
+ .btn:hover
+{
+    background-color: var(--black);  
+    color: var(--white);
+}
+
+
 .header
 {
     position: fixed;
     top: 0; 
     left: -35rem;
     height: 100vh;
-    background: var(--white);
+    background-color: var(--white);
     border-right: var(--border-bold);
     width: 35rem;
     padding: 3rem 2rem;
@@ -143,17 +168,54 @@ body.active
     left: 0;
 }
 
+.home 
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    min-height: 100vh;
+}
 
+.home .image
+{
+    flex: 1 1 40rem;
+}
 
+.home .image img
+{
+    height: 60rem;
+    padding: 2rem;
+    border: var(--border-bold);
+}
 
+.home .content
+{
+    flex: 1 1 40rem;
+}
 
+.home .content h3 
+{
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-bottom: .5rem;
+}
 
+.home .content span 
+{
+    display: inline-block;
+    font-size: 2.5rem;
+    background-color: var(--yellow);
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+}
 
-
-
-
-
-
+.home .content p
+{
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
 
 
 
@@ -199,5 +261,11 @@ body.active
     #menu-btn.fa-times
     {
         right: 0;
+    }
+
+    .home .image img
+    {
+        height: auto;
+        width: 100%;
     }
 }
