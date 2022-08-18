@@ -40,6 +40,23 @@
     </header>
 <!-- header section ends -->
 
+<!-- home section starts -->
+    <section class="home" id="home">
+    <div class="image">
+        <img src="33.png" alt="">
+    </div>
+
+    <div class="content">
+        <h3>hi, i am Frank Malisa</h3>
+        <span>computer engineer & web developer</span>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt velit, facilis eius nesciunt repellat pariatur necessitatibus? Ratione cumque eius repellendus nisi praesentium alias vel provident quas! Optio ab mollitia a.</p>
+        <a href="#about" class="btn">Download Cv</a>
+    </div>
+
+    </section>
+
+<!-- home section ends -->
+
 
 
 
