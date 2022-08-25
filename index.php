@@ -148,46 +148,46 @@
 <!-- about section ends -->
 
 <!-- services section starts -->
-<section class="services" id="services">
-    <h1 class="heading"><span>services</span></h1>
-    <div class="box-container">
-        <div class="box">
-            <i class="fas fa-code"></i>
-            <h3>web development</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nam a facilis eius voluptates iusto.</p>
-        </div>
+    <section class="services" id="services">
+        <h1 class="heading"><span>services</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-code"></i>
+                <h3>web development</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nam a facilis eius voluptates iusto.</p>
+            </div>
 
-        <div class="box">
-            <i class="fas fa-paint-brush"></i>
-            <h3>graphic design</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nam a facilis eius voluptates iusto.</p>
-        </div>
+            <div class="box">
+                <i class="fas fa-paint-brush"></i>
+                <h3>graphic design</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nam a facilis eius voluptates iusto.</p>
+            </div>
 
-        <div class="box">
-            <i class="fas fa-bootstrap"></i>
-            <h3>bootstrap</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nam a facilis eius voluptates iusto.</p>
-        </div>
+            <div class="box">
+                <i class="fab fa-bootstrap"></i>
+                <h3>bootstrap</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nam a facilis eius voluptates iusto.</p>
+            </div>
 
-        <div class="box">
-            <i class="fas fa-chart-line"></i>
-            <h3>seo marketing</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nam a facilis eius voluptates iusto.</p>
-        </div>
+            <div class="box">
+                <i class="fas fa-chart-line"></i>
+                <h3>seo marketing</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nam a facilis eius voluptates iusto.</p>
+            </div>
 
-        <div class="box">
-            <i class="fas fa-bullhorn"></i>
-            <h3>digital marketing</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nam a facilis eius voluptates iusto.</p>
-        </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>digital marketing</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nam a facilis eius voluptates iusto.</p>
+            </div>
 
-        <div class="box">
-            <i class="fas fa-wordpress"></i>
-            <h3>wordpress</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nam a facilis eius voluptates iusto.</p>
+            <div class="box">
+                <i class="fab fa-wordpress"></i>
+                <h3>wordpress</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora nam a facilis eius voluptates iusto.</p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 <!-- services section ends -->
 
