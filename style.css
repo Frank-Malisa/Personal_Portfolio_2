@@ -91,6 +91,7 @@ section
     padding: 1rem 3rem;
     border: var(--border-light);
     font-size: 2rem;
+    border-radius: 2rem;
  }
  
  .btn:hover
@@ -256,6 +257,7 @@ section
     font-size: 1.5rem;
     font-weight: normal;
     text-transform: none;
+    border-radius: .5rem;
 }
 
 .about .biography .bio h3 span 
@@ -279,6 +281,7 @@ section
     max-width: 70rem;
     border: var(--border-bold);
     padding: 1rem;
+    border-radius: 2rem;
 }
 
 .about .skills .progress .bar h3
@@ -346,6 +349,7 @@ section
     margin: 1.5rem 0;
     background-color: var(--light-bg);
     padding: 2rem;
+    border-radius: 2rem;
 }
 
 .about .edu-exp .row .box-container .box span
@@ -380,6 +384,7 @@ section
 {
     padding:3rem 2rem;
     border: var(--border-light);
+    border-radius: 3rem;
 }
 
 .services .box-container .box i 
@@ -488,6 +493,47 @@ section
 .contact form .flex .box
 {
     width: 49%;
+}
+
+.contact .box-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-top: 3rem;
+}
+
+.contact .box-container .box
+{
+    padding: 3rem 2rem;
+    border: var(--border-light);
+    background-color: var(--light-bg);
+    border-radius: 2rem;
+}
+
+.contact .box-container .box i
+{
+    font-size: 3rem;
+    height: 7rem;
+    width: 7rem;
+    line-height: 7rem;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 1rem;
+    margin-bottom: .5rem;
+}
+
+.contact .box-container .box h3
+{
+    margin: 1.5rem 0;
+    font-size: 2.5rem;
+}
+
+.contact .box-container .box p
+{
+    font-size: 1.7rem;
+    text-transform: none;
 }
 
 .credit 
