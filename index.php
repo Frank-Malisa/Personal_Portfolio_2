@@ -253,6 +253,26 @@
             <input type="submit" value="send message" name="send" class="btn">
         </form>
 
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h3>phone</h3>
+                <p>+255-758-893-165</p>
+            </div>
+            
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3>email</h3>
+                <p>fmalisah02@gmail.com</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>address</h3>
+                <p>Arusha, Tanzania</p>
+            </div>
+        </div>
+
     </section>
 
 <!-- contact section ends -->
