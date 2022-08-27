@@ -384,16 +384,17 @@ section
 
 .services .box-container .box i 
 {
-    font-size: 6rem;
-    margin-bottom: .5rem;
+    font-size: 4rem;
+    margin-bottom: 2rem;
 }
 
 .services .box-container .box h3
 {
     margin: 1rem 0;
     font-size: 2rem;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: var(--yellow);
+    font-weight: normal;
 }
 
 .services .box-container .box p
@@ -402,21 +403,106 @@ section
     font-size: 1.7rem;
 }
 
+.services .box-container .box:hover
+{
+    background-color: var(--black);
+}
 
+.services .box-container .box:hover i
+{
+    color: var(--white);
+}
 
+.services .box-container .box:hover p
+{
+    color: var(--white);
+}
 
+.portfolio .box-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+}
 
+.portfolio .box-container .box img 
+{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
 
+.portfolio .box-container .box h3
+{
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: normal;
+}
 
+.portfolio .box-container .box span
+{
+    font-size: 1.7rem;
+}
 
+.portfolio .box-container:hover .box
+{
+    opacity: .2;
+}
 
+.portfolio .box-container .box:hover
+{
+    opacity: 1;
+}
 
+.contact form
+{
+    max-width: 70rem;
+    margin: 0 auto;
 
+}
 
+.contact form .box
+{
+    width: 100%;
+    padding: 1.4rem;
+    font-size: 2rem;
+    text-transform: none;
+    border: var(--border-light);
+    margin: 1rem 0;
+}
 
+.contact form textarea
+{
+    height: 20rem;
+    resize: none;
+}
 
+.contact form .flex 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.contact form .flex .box
+{
+    width: 49%;
+}
 
+.credit 
+{
+    text-align: center;
+    background-color: var(--black);
+    padding: 3rem;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.credit span
+{
+    color: var(--yellow);
+}
 
 
 
@@ -484,5 +570,10 @@ section
     .about .biography .bio h3 
     {
         font-size: 2rem;
+    }
+
+    .contact form .flex .box
+    {
+        width: 100%;
     }
 }
