@@ -47,7 +47,7 @@
     </div>
 
     <div class="content">
-        <h3>hi, i am Frank Malisa</h3>
+        <h3>hi, i am frank Malisa</h3>
         <span>computer engineer & web developer</span>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt velit, facilis eius nesciunt repellat pariatur necessitatibus? Ratione cumque eius repellendus nisi praesentium alias vel provident quas! Optio ab mollitia a.</p>
         <a href="#about" class="btn">Download Cv</a>
@@ -192,9 +192,72 @@
 <!-- services section ends -->
 
 
+<!-- portfolio section starts  -->
+<section class="portfolio" id="portfolio">
+    <h1 class="heading"><span>portfolio</span></h1>
 
+    <div class="box-container">
+        <div class="box">
+            <img src="88.jpg" alt="">
+            <h3>web development</h3>
+            <span>(2020-2022)</span>
+        </div>
 
+        <div class="box">
+            <img src="77.png" alt="">
+            <h3>web development</h3>
+            <span>(2020-2022)</span>
+        </div>
 
+        <div class="box">
+            <img src="99.jpg" alt="">
+            <h3>web development</h3>
+            <span>(2020-2022)</span>
+        </div>
+
+        <div class="box">
+            <img src="77.png" alt="">
+            <h3>web development</h3>
+            <span>(2020-2022)</span>
+        </div>
+
+        <div class="box">
+            <img src="77.png" alt="">
+            <h3>web development</h3>
+            <span>(2020-2022)</span>
+        </div>
+
+        <div class="box">
+            <img src="77.png" alt="">
+            <h3>web development</h3>
+            <span>(2020-2022)</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- portfolio section ends -->
+
+<!-- contact section starts -->
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>contact me</span></h1>
+
+        <form action="" method="post">
+            <div class="flex">
+                <input type="text" name="name" placeholder="enter your name" class="box" required>
+                <input type="email" name="email" placeholder="enter your email" class="box" required>
+            </div>
+            <input type="number" min="0" name="number" placeholder="enter your number" class="box" required>
+            <textarea name="message" class="box" required placeholder="enter your message" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" name="send" class="btn">
+        </form>
+
+    </section>
+
+<!-- contact section ends -->
+
+<div class="credit">&copy; copyright @ <?php echo date('Y'); ?> by <span>F.Malisa</span></div>
 
 
 
