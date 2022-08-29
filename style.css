@@ -86,14 +86,20 @@ section
 .message
 {
     position: sticky;
-    top: 2rem;
+    top: 6rem;
     max-width: 1200px;
     margin: 0 auto;
     background-color: var(--yellow);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 1.7rem;
+    font-size: 2rem;
+}
+
+.message i
+{
+    cursor: pointer;
 }
 
  .btn
@@ -105,6 +111,7 @@ section
     border: var(--border-light);
     font-size: 2rem;
     border-radius: 2rem;
+    background-color: var(--light-bg);
  }
  
  .btn:hover
