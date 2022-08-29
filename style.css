@@ -83,6 +83,19 @@ section
     border-bottom: var(--border-bold);
 }
 
+.message
+{
+    position: sticky;
+    top: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
  .btn
  {
     display: inline-block;
