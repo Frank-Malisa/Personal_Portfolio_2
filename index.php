@@ -52,7 +52,7 @@ if(isset($message))
     foreach($message as $message)
     {
         echo'
-        <div class="message"  data-aos="zoom-out">
+        <div class="message" data-aos="zoom-out">
             <span>'.$message.'</span>
             <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
         </div>
@@ -99,7 +99,7 @@ if(isset($message))
         <h3 data-aos="fade-up">hi, i am frank Malisa</h3>
         <span data-aos="fade-up">computer engineer & web developer</span>
         <p data-aos="fade-up">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt velit, facilis eius nesciunt repellat pariatur necessitatibus? Ratione cumque eius repellendus nisi praesentium alias vel provident quas! Optio ab mollitia a.</p>
-        <a data-aos="fade-up" href="#about" class="btn">Download Cv</a>
+        <a data-aos="fade-up" href="https://fv9-6.failiem.lv/down.php?i=5ve62vmv8" class="btn">Download Cv</a>
     </div>
 
     </section>
@@ -111,14 +111,6 @@ if(isset($message))
         <h1 class="heading" data-aos="fade-up"><span>biography</span></h1>
         <div class="biography">
             <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam architecto molestiae minus illo repellendus harum rerum nemo adipisci eaque neque, laudantium quis natus perferendis labore nam! Distinctio rerum eos doloribus.</p>
-            
-            <div class="bio">
-                <h3 data-aos="zoom-in"><span>name: </span> Frank Malisa</h3>
-                <h3 data-aos="zoom-in"><span>email: </span> fmalisah02@gmail.com</h3>
-                <h3 data-aos="zoom-in"><span>address: </span> kijitonyama, Dar-es-salaam</h3>
-                <h3 data-aos="zoom-in"><span>phone: </span> +255-758-893-165</h3>
-                <h3 data-aos="zoom-in"><span>age: </span> 23 years</h3>
-            </div>
 
             <a data-aos="fade-up" href="#" class="btn">about me</a>
 
@@ -364,7 +356,7 @@ if(isset($message))
 <script>
     AOS.init({
         duration:800,
-        delay:300
+        delay:150
     })
 </script>
    

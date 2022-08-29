@@ -86,7 +86,7 @@ section
 .message
 {
     position: sticky;
-    top: 6rem;
+    top: 3.7rem;
     max-width: 1200px;
     margin: 0 auto;
     background-color: var(--yellow);
@@ -95,6 +95,7 @@ section
     justify-content: space-between;
     padding: 1.7rem;
     font-size: 2rem;
+    flex: 1 1 40rem;
 }
 
 .message i
@@ -257,32 +258,6 @@ section
     max-width: 70rem;
     line-height: 2;
     font-size: 1.7rem;
-}
-
-.about .biography .bio 
-{
-    margin-top: 1rem 0;
-}
-
-.about .biography .bio h3 
-{
-    padding: 1rem, 1.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    display: inline-block;
-    margin: 1rem;
-    background-color: var(--light-bg);
-    border: var(--border-light);
-    word-break: break-all;
-    font-size: 1.5rem;
-    font-weight: normal;
-    text-transform: none;
-    border-radius: .5rem;
-}
-
-.about .biography .bio h3 span 
-{
-    font-weight: lighter;
 }
 
 .about .skills
