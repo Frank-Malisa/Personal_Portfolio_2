@@ -52,7 +52,7 @@ if(isset($message))
     foreach($message as $message)
     {
         echo'
-        <div class="message" data-aos="zoom-out">
+        <div class="message" id="message" data-aos="zoom-out">
             <span>'.$message.'</span>
             <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
         </div>
@@ -77,6 +77,7 @@ if(isset($message))
             <a href="#contact">contact</a>
         </nav>
 
+
         <div class="follow">
             <a href="https://www.facebook.com/frank.malisa.104/" class="fab fa-facebook-f"></a>
             <a href="https://twitter.com/OfficialFrank_M" class="fab fa-twitter"></a>
@@ -85,12 +86,11 @@ if(isset($message))
             <a href="https://github.com/Frank-Malisa" class="fab fa-github"></a>
         </div>
 
-
     </header>
 <!-- header section ends -->
 
 <!-- home section starts -->
-    <section class="home" id="home">
+<section class="home" id="home">
     <div class="image" data-aos="fade-right">
         <img src="33.png" alt="">
     </div>
@@ -102,89 +102,90 @@ if(isset($message))
         <a data-aos="fade-up" href="https://fv9-6.failiem.lv/down.php?i=5ve62vmv8" class="btn">Download Cv</a>
     </div>
 
-    </section>
+
+</section>
 
 <!-- home section ends -->
 
 <!-- about section starts -->
-    <section class="about" id="about">
-        <h1 class="heading" data-aos="fade-up"><span>biography</span></h1>
-        <div class="biography">
-            <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam architecto molestiae minus illo repellendus harum rerum nemo adipisci eaque neque, laudantium quis natus perferendis labore nam! Distinctio rerum eos doloribus.</p>
+<section class="about" id="about">
+    <h1 class="heading" data-aos="fade-up"><span>biography</span></h1>
+    <div class="biography">
+        <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam architecto molestiae minus illo repellendus harum rerum nemo adipisci eaque neque, laudantium quis natus perferendis labore nam! Distinctio rerum eos doloribus.</p>
 
-            <a data-aos="fade-up" href="#" class="btn">about me</a>
+        <a data-aos="fade-up" href="#" class="btn">about me</a>
 
+    </div>
+
+    <div class="skills">
+        <h1  data-aos="fade-up" class="heading"><span>skills</span></h1>
+
+        <div class="progress">
+            <div class="bar" data-aos="fade-left"><h3><span>HTML</span><span>95%</span></h3></div>
+            <div class="bar" data-aos="fade-right"><h3><span>css</span><span>65%</span></h3></div>
+            <div class="bar" data-aos="fade-left"><h3><span>JavaScript</span><span>35%</span></h3></div>
+            <div class="bar" data-aos="fade-right"><h3><span>php</span><span>20%</span></h3></div>
+            <div class="bar" data-aos="fade-left"><h3><span>MySQL</span><span>45%</span></h3></div>
         </div>
 
-        <div class="skills">
-            <h1  data-aos="fade-up" class="heading"><span>skills</span></h1>
+    </div>
 
-            <div class="progress">
-                <div class="bar" data-aos="fade-left"><h3><span>HTML</span><span>95%</span></h3></div>
-                <div class="bar" data-aos="fade-right"><h3><span>css</span><span>65%</span></h3></div>
-                <div class="bar" data-aos="fade-left"><h3><span>JavaScript</span><span>35%</span></h3></div>
-                <div class="bar" data-aos="fade-right"><h3><span>php</span><span>20%</span></h3></div>
-                <div class="bar" data-aos="fade-left"><h3><span>MySQL</span><span>45%</span></h3></div>
+    <div class="edu-exp">
+        <h1 class="heading" data-aos="fade-up"><span>Education and Experience</span></h1>
+        
+        <div class="row">
+            <div class="box-container">
+                <h3 class="title" data-aos="fade-right">education</h3>
+
+                <div class="box" data-aos="fade-right">
+                    <span>(2019 - 2020)</span>
+                    <h3>web designer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur voluptas, fugiat eveniet dignissimos vitae totam.</p>
+                </div>
+
+                
+                <div class="box" data-aos="fade-right">
+                    <span>(2020 - 2021)</span>
+                    <h3>web developer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur voluptas, fugiat eveniet dignissimos vitae totam.</p>
+                </div>
+
+                
+                <div class="box" data-aos="fade-right">
+                    <span>(2021 - 2022)</span>
+                    <h3>logo designer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur voluptas, fugiat eveniet dignissimos vitae totam.</p>
+                </div>
+            </div>
+        
+            <div class="box-container">
+                <h3 class="title" data-aos="fade-left">experience</h3>
+
+                <div class="box" data-aos="fade-left">
+                    <span>(2019 - 2020)</span>
+                    <h3>front-end developer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur voluptas, fugiat eveniet dignissimos vitae totam.</p>
+                </div>
+
+                
+                <div class="box" data-aos="fade-left">
+                    <span>(2020 - 2021)</span>
+                    <h3>back-end developer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur voluptas, fugiat eveniet dignissimos vitae totam.</p>
+                </div>
+
+                
+                <div class="box" data-aos="fade-left">
+                    <span>(2021 - 2022)</span>
+                    <h3>full-stack web developer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur voluptas, fugiat eveniet dignissimos vitae totam.</p>
+                </div>
             </div>
 
         </div>
+    </div>
 
-        <div class="edu-exp">
-            <h1 class="heading" data-aos="fade-up"><span>Education and Experience</span></h1>
-            
-            <div class="row">
-                <div class="box-container">
-                    <h3 class="title" data-aos="fade-right">education</h3>
-
-                    <div class="box" data-aos="fade-right">
-                        <span>(2019 - 2020)</span>
-                        <h3>web designer</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur voluptas, fugiat eveniet dignissimos vitae totam.</p>
-                    </div>
-
-                    
-                    <div class="box" data-aos="fade-right">
-                        <span>(2020 - 2021)</span>
-                        <h3>web developer</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur voluptas, fugiat eveniet dignissimos vitae totam.</p>
-                    </div>
-
-                    
-                    <div class="box" data-aos="fade-right">
-                        <span>(2021 - 2022)</span>
-                        <h3>logo designer</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur voluptas, fugiat eveniet dignissimos vitae totam.</p>
-                    </div>
-                </div>
-            
-                <div class="box-container">
-                    <h3 class="title" data-aos="fade-left">experience</h3>
-
-                    <div class="box" data-aos="fade-left">
-                        <span>(2019 - 2020)</span>
-                        <h3>front-end developer</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur voluptas, fugiat eveniet dignissimos vitae totam.</p>
-                    </div>
-
-                    
-                    <div class="box" data-aos="fade-left">
-                        <span>(2020 - 2021)</span>
-                        <h3>back-end developer</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur voluptas, fugiat eveniet dignissimos vitae totam.</p>
-                    </div>
-
-                    
-                    <div class="box" data-aos="fade-left">
-                        <span>(2021 - 2022)</span>
-                        <h3>full-stack web developer</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur voluptas, fugiat eveniet dignissimos vitae totam.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </section>
+</section>
 
 <!-- about section ends -->
 
@@ -322,33 +323,9 @@ if(isset($message))
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- custom js file link -->
 <script src="script.js"></script>
+<script src="me.js"></script>
 
 <!-- aos js link -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -359,6 +336,18 @@ if(isset($message))
         delay:150
     })
 </script>
-   
+
+<script>
+    const message = document.getElementById('message');
+    const bodi = document.getElementById('bodi');
+    const toggle = document.getElementById('toggle');
+    toggle.onclick = function ()
+    {
+        toggle.classList.toggle('active')
+        bodi.classList.toggle('active')
+        message.classList.toggle('active')
+    }
+</script>
+
 </body>
 </html>

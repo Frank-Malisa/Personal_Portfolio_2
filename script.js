@@ -7,6 +7,8 @@ menu.onclick = () => {
     document.body.classList.toggle('active');
 }
 
+
+
 window.onscroll = () =>
 {
     if(window.innerWidth < 991)
@@ -34,3 +36,4 @@ window.onscroll = () =>
     });
 
 }
+
