@@ -85,11 +85,12 @@ if(isset($message))
             <a href="https://www.linkedin.com/in/frank-malisa-752454230/" class="fab fa-linkedin"></a>
             <a href="https://github.com/Frank-Malisa" class="fab fa-github"></a>
         </div>
-
+        
     </header>
 <!-- header section ends -->
 
 <!-- home section starts -->
+
 <section class="home" id="home">
     <div class="image" data-aos="fade-right">
         <img src="33.png" alt="">
@@ -100,8 +101,8 @@ if(isset($message))
         <span data-aos="fade-up">computer engineer & web developer</span>
         <p data-aos="fade-up">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt velit, facilis eius nesciunt repellat pariatur necessitatibus? Ratione cumque eius repellendus nisi praesentium alias vel provident quas! Optio ab mollitia a.</p>
         <a data-aos="fade-up" href="https://fv9-6.failiem.lv/down.php?i=5ve62vmv8" class="btn">Download Cv</a>
+       
     </div>
-
 
 </section>
 
@@ -318,8 +319,10 @@ if(isset($message))
     </section>
 
 <!-- contact section ends -->
-
-<div class="credit">&copy; copyright @ <?php echo date('Y'); ?> by <span>F.Malisa</span></div>
+<div class="credit">
+    &copy; copyright @ <?php echo date('Y'); ?> by <span>F.Malisa</span>
+    <div class="btn"><a href="index.htm">admin</a></div>
+</div>
 
 
 

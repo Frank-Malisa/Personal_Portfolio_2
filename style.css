@@ -114,13 +114,12 @@ section
     border-radius: 2rem;
     background-color: var(--light-bg);
  }
- 
+
  .btn:hover
 {
     background-color: var(--black);  
     color: var(--white);
 }
-
 
 .header
 {
@@ -198,9 +197,31 @@ section
     cursor: pointer;
 }
 
-.header.active
+.header .active
 {
     left: 0;
+}
+
+.header.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.header.center button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--black);
+    background: var(--yellow);
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    text-decoration: none;
 }
 
 .home
@@ -545,11 +566,10 @@ section
     color: var(--yellow);
 }
 
-
-
-
-
-
+.batan
+{
+    font-size: 5rem;
+}
 
 
 
