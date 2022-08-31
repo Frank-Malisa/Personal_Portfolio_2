@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root 
+{
+    --yellow:#ffcc0d;
+    --black:#000;
+    --white: #fff;
+    --light-bg:#eee;
+    --border-bold:.5rem solid var(--black);
+    --border-light:.2rem solid var(--black);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--black);
+}
+
+body {
+    background:  var(--light-bg);
+    font-family: 'Rubik', sans-serif;
+    height: 100vh;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.center button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--black);
+    background: var(--yellow);
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+.popup {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    width: 400px;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+    border-radius: 2rem;
+    visibility: hidden;
+    transition: transform 0.5s, top 0.5s;
+}
+
+.popup.active {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+}
+.popup .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 15px;
+    background: var(--black);
+    color: var(--white);
+    font-size: 15px;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.popup .form h2 {
+    text-align: center;
+    color: var(--black);
+    margin:10px 0px 20px;
+    font-size: 2rem;
+}
+
+.popup .form .form-element {
+    margin: 15px 0px;
+}
+
+.popup .form .form-element label {
+    font-size: 1rem;
+    color: var(--black);
+}
+
+.popup .form .form-element input[type="text"],
+.popup .form .form-element input[type="password"] {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: var(--border-light);
+    border-radius: .8rem;
+}
+
+.popup .form .form-element input[type="checkbox"]{
+    margin-right: 5px;
+}
+
+.popup .form .form-element button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    background: var(--yellow);
+    color: var(--black);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.popup .form .form-element a{
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: #1a79ca;
+    text-decoration: none;
+}
