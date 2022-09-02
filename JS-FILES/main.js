@@ -36,3 +36,10 @@ window.onscroll = () =>
     });
 
 }
+    let elementy = document.querySelector("#show-login");
+elementy.addEventListener("click", function()
+{
+    let blur = document.querySelector("#blur");
+    blur.classList.add("active");
+    
+});
