@@ -1,3 +1,17 @@
+/*...........................................
+
+FILENAME: main.css
+
+.............................................
+
+        TABLE OF CONTENTS
+    01. Navigation bar
+    02. Home section
+    03. About section
+
+
+
+...........................................*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
 :root 
@@ -62,6 +76,11 @@ body.active
     padding-left: 35rem;
 }
 
+.containers#blur.active
+{
+    filter: blur(20px);
+}
+
 section
 {
     padding: 3rem 2rem;
@@ -121,6 +140,9 @@ section
     color: var(--white);
 }
 
+/*=============================================
+    01. NAVIGATION BAR
+=============================================*/
 .header
 {
     position: fixed;
@@ -138,6 +160,11 @@ section
     flex-flow: column;
     transition: .2s linear !important;
     text-align: center;
+}
+
+.header.active
+{
+    left: 0rem;
 }
 
 .header .logo
@@ -194,36 +221,11 @@ section
     cursor: pointer;
     background-color: var(--black);
     color: var(--white);
-    cursor: pointer;
 }
 
-.header .active
-{
-    left: 0;
-}
-
-.header.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-
-.header.center button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: normal;
-    color: var(--black);
-    background: var(--yellow);
-    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 1rem;
-    text-decoration: none;
-}
-
+/*=============================================
+    02. HOME SECTION
+=============================================*/
 .home
 {
     display: flex;
@@ -273,6 +275,9 @@ section
     line-height: 2;
 }
 
+/*=============================================
+    03. ABOUT SECTION
+=============================================*/
 .about .biography p
 {
     margin: 2rem auto;
@@ -388,6 +393,9 @@ section
     line-height: 2;
 }
 
+/*=============================================
+    04. SERVICES SECTION
+=============================================*/
 .services .box-container
 {
     display: grid;
@@ -439,6 +447,9 @@ section
     color: var(--white);
 }
 
+/*=============================================
+    05. PORTFOLIO SECTION
+=============================================*/
 .portfolio .box-container
 {
     display: grid;
@@ -476,6 +487,9 @@ section
     opacity: 1;
 }
 
+/*=============================================
+    06. CONTACT SECTION
+=============================================*/
 .contact form
 {
     max-width: 70rem;
@@ -566,39 +580,9 @@ section
     color: var(--yellow);
 }
 
-.batan
-{
-    font-size: 5rem;
-}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* media queries */
-
-@media (max-width:991px)
-{
-    html
-    {
-        font-size: 55%;
-    }
-
-    body.active
-    {
-        padding-left: 0;
-    }
-}
 
 @media (max-width:450px)
 {

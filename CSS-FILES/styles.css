@@ -1,43 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
-
-:root 
+.adminPage .btng button
 {
-    --yellow:#ffcc0d;
-    --black:#000;
-    --white: #fff;
-    --light-bg:#eee;
-    --border-bold:.5rem solid var(--black);
-    --border-light:.2rem solid var(--black);
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-    color: var(--black);
-}
-
-body {
-    background:  var(--light-bg);
-    font-family: 'Rubik', sans-serif;
-    height: 100vh;
-}
-
-.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-
-.center button {
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: normal;
     color: var(--black);
     background: var(--yellow);
@@ -47,24 +11,27 @@ body {
     cursor: pointer;
     border-radius: 1rem;
     text-decoration: none;
+    margin-bottom: 4rem;
 }
 
 .popup {
     position: absolute;
-    top: 0;
+    top: 600rem;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.1);
+    transform: translate(-50%) scale(0.1);
     width: 400px;
     padding: 20px 30px;
     background: #fff;
     box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
     border-radius: 2rem;
-    visibility: hidden;
     transition: transform 0.5s, top 0.5s;
+    visibility: hidden;
 }
 
+
+
 .popup.active {
-    top: 50%;
+    top: 410rem;
     transform: translate(-50%, -50%) scale(1);
     visibility: visible;
 }
@@ -94,7 +61,7 @@ body {
 }
 
 .popup .form .form-element label {
-    font-size: 1rem;
+    font-size: 2rem;
     color: var(--black);
 }
 
