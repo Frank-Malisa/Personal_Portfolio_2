@@ -1,3 +1,10 @@
+<?php
+
+require("connection.php");
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -41,7 +48,9 @@
     </head>
     <body>
         <div class="containers" id="blur">
-            <!-- NAVIGATION BAR section starts -->
+
+
+            <!-- NAVIGATION BAR SECTION STARTS -->
                 <header class="header">
 
                     <!-- logo -->
@@ -67,9 +76,10 @@
                     </div>
 
                 </header>
-            <!-- NAVIGATION BAR section ends -->
+            <!-- NAVIGATION BAR SECTION ENDS -->
 
-            <!-- HOME section starts         -->
+
+            <!-- HOME SECTION STARTS         -->
             <section class="home" id="home">
 
                 <!-- my photo -->
@@ -87,9 +97,10 @@
                 </div>
 
             </section>
-            <!-- HOME section ends         -->
+            <!-- HOME SECTION ENDS         -->
 
-            <!-- ABOUT section starts      -->
+
+            <!-- ABOUT SECTION STARTS      -->
             <section class="about" id="about">
 
                 <!-- heading -->
@@ -172,9 +183,10 @@
                     </div>
                 </div>
             </section>
-            <!-- ABOUT section ends        -->
+            <!-- ABOUT SECTION ENDS        -->
 
-            <!-- SERVICES section starts   -->
+
+            <!-- SERVICES SECTION STARTS   -->
             <section class="services" id="services">
                 <h1 class="heading"><span>services</span></h1>
                 <div class="box-container">
@@ -197,9 +209,10 @@
                     </div>
                 </div>
             </section>
-            <!-- SERVICES section ends     -->
+            <!-- SERVICES SECTION ENDS     -->
 
-            <!-- PORTFOLIO section starts  -->
+
+            <!-- PORTFOLIO SECTION STARTS  -->
             <section class="portfolio" id="portfolio">
                 <h1 class="heading"><span>portfolio</span></h1>
 
@@ -224,9 +237,10 @@
                 </div>
 
             </section>
-            <!-- PORTFOLIO section ends    -->
+            <!-- PORTFOLIO SECTION ENDS    -->
 
-            <!-- CONTACT section starts    -->
+
+            <!-- CONTACT SECTION STARTS    -->
             <section class="contact" id="contact">
                 <h1 class="heading"><span>contact me</span></h1>
 
@@ -263,69 +277,86 @@
             
 
             </section>
+            <!-- CONTACT SECTION ENDS      -->
+            
 
-            <!-- CONTACT section ends      -->
-                <div class="credit">
-                    &copy; copyright @ <?php echo date('Y'); ?> by <span>F.Malisa</span>
-                    
-                </div>
-        </div>   
-            <section class="adminPage">
+            <!-- ADMIN LOGIN BUTTON STARTS-->
+            <section class="adminPage" method="POST">
                 <div class="btng">
-                    <button type="submit" id="show-login">admnistrator</button> 
+                    <button type="submit" id="show-login" name="Signin">administrator</button> 
                 </div>
+            </section>
+            <!-- ADMIN LOGIN BUTTON ENDS-->
 
-                <div class="popup">
+
+            <!-- COPYRIGHT SECTION STARTS -->
+                <div class="credit">
+                    &copy; copyright @ <?php echo date('Y'); ?> by <span>F.Malisa</span>   
+                </div> 
+            <!-- COPYRIGHT SECTION STARTS -->
+
+
+        </div>
+
+
+                <!-- ADMIN POPUP LOGIN FORM STARTS -->
+                <form class="popup" method="POST">
                     <div class="close-btn">&times;</div>
 
                     <div class="form">
                         <h2>log in</h2>
+
                         <div class="form-element">
-                        <label for="admin name">name</label>
-                        <input type="text" id="admin name" placeholder="Enter admin name">
+                            <label for="admin name">name</label>
+                            <input type="text" id="admin name" placeholder="Enter admin name" name="AdminName">
+                        </div>
+
+                        <div class="form-element">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="Enter password" name="AdminPassword">
+                        </div>
+
+                        <div class="form-element">
+                            <input type="checkbox" id="remember-me">
+                            <label for="remember-me">Rember Me</label>
+                        </div>
+
+                        <div class="form-element">
+                        <button type="submit" name="Signin">Sign in</button>
+                        </div>
+
+                        <div class="form-element">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+
                     </div>
-
-                    <div class="form-element">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" placeholder="Enter password">
-                    </div>
-
-                    <div class="form-element">
-                        <input type="checkbox" id="remember-me">
-                        <label for="remember-me">Rember Me</label>
-                    </div>
-
-                    <div class="form-element">
-                    <button>Sign in</button>
-                    </div>
-
-                    <div class="form-element">
-                        <a href="#">Forgot Password?</a>
-                    </div>
-
-                </div>
-
-
-            </section>
+                </form>
+                <!-- ADMIN POPUP LOGIN FORM ENDS -->
+            
+            <!-- custom JS files links     -->
             <script src="JS-FILES/main.js"></script>
             <script src="JS-FILES/me.js"></script>
 
-            <script>
-                let elements = document.querySelector("#show-login");
-                elements.addEventListener("click", function()
+            <?php
+                if(isset($_POST['Signin']))
                 {
-                    let blur = document.querySelector("#blur");
-                    blur.classList.add("active");
-                });
+                    $query="SELECT * FROM `admin_login` WHERE `admin_name`='$_POST[AdminName]' AND `admin_password`='$_POST[AdminPassword]'";
+                    $result=mysqli_query($con, $query);
 
-                let cr = document.querySelector(".popup .close-btn");
-                cr.addEventListener("click", function()
-                {
-                    let blur = document.querySelector("#blur");
-                    blur.classList.remove("active");
-                });
+                    if(mysqli_num_rows($result)==1)
+                    {
+                        session_start();
+                        $_SESSION['AdminLoginId']=$_POST['AdminName'];
+                        header("location: AdminPanel.php");
+                    }
 
-            </script>
+                    else
+                    {
+                        echo "<script>alert('Incorrect Username or Password');</script>";
+                    }
+                }
+
+            ?>
         
     </body>
 </html>

@@ -8,7 +8,11 @@ FILENAME: main.css
     01. Navigation bar
     02. Home section
     03. About section
-
+    04. Services section
+    05. portfolio section
+    06. Contact section
+    07. Copyright section 
+    08. Media queries section
 
 
 ...........................................*/
@@ -566,6 +570,9 @@ section
     text-transform: none;
 }
 
+/*=============================================
+    07. COPYRIGHT SECTION
+=============================================*/
 .credit 
 {
     text-align: center;
@@ -582,8 +589,9 @@ section
 
 
 
-
-
+/*=============================================
+    08. MEDIA QUERIES SECTION
+=============================================*/
 @media (max-width:450px)
 {
     html
