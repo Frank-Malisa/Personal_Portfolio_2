@@ -1,10 +1,32 @@
 <?php
 
-require("connection.php");
-
+    require("connection.php");
 ?>
 
+<?php
+    $conn = mysqli_connect('localhost', 'root', '', 'contact_db') or die("connection failed");
+    if(isset($_POST['send']))
+    {
+        $name = mysqli_real_escape_string($con, $_POST['name']);
+        $email = mysqli_real_escape_string($con, $_POST['email']);
+        $number = mysqli_real_escape_string($con, $_POST['number']);
+        $msg = mysqli_real_escape_string($con, $_POST['message']);
 
+        $select_message = mysqli_query($conn, "SELECT * FROM `contact_form` WHERE name = '$name' AND email = '$email' AND number = '$number' AND message ='$msg'")or die("query failed");
+        
+        if(mysqli_num_rows($select_message) > 0)
+        {
+            $message[] = 'message sent already!';
+        }
+
+        else
+        {
+            mysqli_query($conn, "INSERT INTO `contact_form` (name, email, number, message) VALUES ('$name', '$email', '$number', '$msg')")or die ("query failed");
+            $message[] = 'message sent Successfully!';
+        }
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -49,6 +71,20 @@ require("connection.php");
     <body>
         <div class="containers" id="blur">
 
+<?php
+    if(isset($message))
+    {
+        foreach($message as $message)
+        echo '
+                <div class="message">
+                    <span>'.$message.'</span>
+                    <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+                </div> 
+        
+        ';
+    }
+
+?>
 
             <!-- NAVIGATION BAR SECTION STARTS -->
                 <header class="header">
@@ -283,7 +319,7 @@ require("connection.php");
             <!-- ADMIN LOGIN BUTTON STARTS-->
             <section class="adminPage" method="POST">
                 <div class="btng">
-                    <button type="submit" id="show-login" name="Signin">administrator</button> 
+                    <button type="submit" id="show-login" name="Signin">administrator login</button> 
                 </div>
             </section>
             <!-- ADMIN LOGIN BUTTON ENDS-->
@@ -337,26 +373,7 @@ require("connection.php");
             <script src="JS-FILES/main.js"></script>
             <script src="JS-FILES/me.js"></script>
 
-            <?php
-                if(isset($_POST['Signin']))
-                {
-                    $query="SELECT * FROM `admin_login` WHERE `admin_name`='$_POST[AdminName]' AND `admin_password`='$_POST[AdminPassword]'";
-                    $result=mysqli_query($con, $query);
-
-                    if(mysqli_num_rows($result)==1)
-                    {
-                        session_start();
-                        $_SESSION['AdminLoginId']=$_POST['AdminName'];
-                        header("location: AdminPanel.php");
-                    }
-
-                    else
-                    {
-                        echo "<script>alert('Incorrect Username or Password');</script>";
-                    }
-                }
-
-            ?>
+            
         
     </body>
 </html>
