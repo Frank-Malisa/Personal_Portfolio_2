@@ -1,0 +1,143 @@
+/*...........................................
+
+FILENAME: main.css
+
+.............................................
+
+        TABLE OF CONTENTS
+    01. Navigation bar
+    02. Home section
+    03. About section
+    04. Services section
+    05. portfolio section
+    06. Contact section
+    07. Copyright section 
+    08. Media queries section
+
+
+...........................................*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root 
+{
+    --yellow:#ffcc0d;
+    --black:#000;
+    --white: #fff;
+    --light-bg:#eee;
+    --border-bold:.5rem solid var(--black);
+    --border-light:.2rem solid var(--black);
+}
+
+*{
+    font-family: 'rubik', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--black);
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.main-div
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div .center-div
+{
+    width: 90%;
+    height: 80vh;
+    background-color: var(--light-bg);
+    padding: 20px 0 0 0 ;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.main-div .center-div h1
+{
+    font-size: 2rem;
+    color: var(--black);
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.main-div .center-div table
+{
+    border-collapse: collapse;
+    background-color: var(--white);
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: auto;
+}
+
+.main-div .center-div table th, td
+{
+   /* border: var(--border-light);*/
+    padding: 8px 30px;
+    text-align: center;
+    color: grey;
+}
+
+.main-div .center-div table th
+{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.main-div .center-div table td
+{
+    font-size: 13px;
+}
+
+.email-style
+{
+    font-size: 14px;
+    color: grey;
+    display: inline-block;
+    background-color: var(--light-bg);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    line-height: 30px;
+    padding: 0 14px;
+}
+
+.post-class
+{
+    text-transform: uppercase;
+}
+
+.fa
+{
+    font-size: 18px;
+}
+
+.fa-edit
+{
+    color: green;
+}
+
+.fa-trash
+{
+    color: red;
+}
+
+a
+{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
