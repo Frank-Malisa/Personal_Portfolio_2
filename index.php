@@ -128,7 +128,7 @@
                 <div class="content">
                     <h3>hi, i am frank Malisa</h3>
                     <span>computer engineer & web developer</span>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt velit, facilis eius nesciunt repellat pariatur necessitatibus? Ratione cumque eius repellendus nisi praesentium alias vel provident quas! Optio ab mollitia a.</p>
+                    <p>Welcome to my portfolio. I am an enthusiastic and eager to learn individual who is ready to use my knowledge to solve real life problems.</p>
                     <a href="https://fv9-6.failiem.lv/down.php?i=5ve62vmv8" class="btn">Download Cv</a>  
                 </div>
 

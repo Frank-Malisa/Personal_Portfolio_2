@@ -46,30 +46,30 @@ body
 
 .main-div
 {
-    width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .main-div .center-div
 {
-    width: 90%;
-    height: 80vh;
+    width: 100%;
+    height: 100vh;
     background-color: var(--light-bg);
-    padding: 20px 0 0 0 ;
-    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
 }
 
-.main-div .center-div h1
+.main-div h1
 {
     font-size: 2rem;
     color: var(--black);
+    background-color: var(--yellow);
+    padding: 10px;
+    width: 400px;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
     text-align: center;
-    margin-top: -20px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -84,28 +84,46 @@ body
 
 .main-div .center-div table th, td
 {
-   /* border: var(--border-light);*/
+    border: var(--border-light);
     padding: 8px 30px;
     text-align: center;
-    color: grey;
 }
 
 .main-div .center-div table th
 {
     text-transform: uppercase;
     font-weight: 500;
+    color: var(--black);
+    font-size: 18px;
 }
 
 .main-div .center-div table td
 {
     font-size: 13px;
+    color: var(--black);
 }
 
+.main-div button
+{
+    position: absolute;
+    top: 87%;
+    left: 87%;
+    background-color: var(--yellow);
+    padding: 10px;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+    width: 150px;
+}
+
+.main-div button a 
+{
+    font-size: 1rem;
+    font-weight: bold;
+}
 .email-style
 {
     font-size: 14px;
     color: grey;
-    display: inline-block;
     background-color: var(--light-bg);
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
