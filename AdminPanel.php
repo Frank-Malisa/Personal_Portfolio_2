@@ -40,7 +40,7 @@
                             <th>Email</th>
                             <th>Number</th>
                             <th>Message</th>
-                            <th>Operation</th>
+                            <th colspan="2">Operation</th>
                         </tr>
                     </thead>
 
@@ -75,7 +75,7 @@
                                 <tr>
                                     <td><?php echo $res['id']; ?></td>
                                     <td><?php echo $res['name']; ?></td>
-                                    <td><?php echo $res['email']; ?></td>
+                                    <td><span class="email-style"><?php echo $res['email']; ?></span></td>
                                     <td><?php echo $res['number']; ?></td>
                                     <td><?php echo $res['message']; ?></td>
                                     <td><i class="fas fa-edit"></i></td>
@@ -90,6 +90,8 @@
                 </table>
             </div>
         </div>
+
+        <button><a href="index.php">Logout</a></button>
     </div>
 </body>
 </html>
